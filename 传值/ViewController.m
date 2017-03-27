@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "wjDelegateFirstVC.h"
 #import "wjBlockFirstVC.h"
-
+#import "wjPropertyFirstVC.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -40,7 +40,6 @@
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSLog(@"%ld", self.dataArray.count);
     return self.dataArray.count;
 }
 
@@ -60,6 +59,10 @@
     }
     if (indexPath.row == 1) {
         wjBlockFirstVC *first = [[wjBlockFirstVC alloc] init];
+        [self.navigationController pushViewController:first animated:YES];
+    }
+    if (indexPath.row == 2) {
+        wjPropertyFirstVC *first = [[wjPropertyFirstVC alloc] init];
         [self.navigationController pushViewController:first animated:YES];
     }
 }
