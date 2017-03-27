@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "wjDelegateFirstVC.h"
+#import "wjBlockFirstVC.h"
 
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -55,6 +56,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
         wjDelegateFirstVC *first = [[wjDelegateFirstVC alloc] init];
+        [self.navigationController pushViewController:first animated:YES];
+    }
+    if (indexPath.row == 1) {
+        wjBlockFirstVC *first = [[wjBlockFirstVC alloc] init];
         [self.navigationController pushViewController:first animated:YES];
     }
 }

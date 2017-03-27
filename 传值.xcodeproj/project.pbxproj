@@ -15,6 +15,8 @@
 		9BA815F31E889E41006BE9F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA815F11E889E41006BE9F2 /* LaunchScreen.storyboard */; };
 		9BA815FD1E889E96006BE9F2 /* wjDelegateFirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA815FC1E889E96006BE9F2 /* wjDelegateFirstVC.m */; };
 		9BA816001E889EC5006BE9F2 /* wjDelegateSecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA815FF1E889EC5006BE9F2 /* wjDelegateSecondVC.m */; };
+		9BA816041E88B6D7006BE9F2 /* wjBlockFirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA816031E88B6D7006BE9F2 /* wjBlockFirstVC.m */; };
+		9BA816071E88B6EF006BE9F2 /* wjBlockSecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA816061E88B6EF006BE9F2 /* wjBlockSecondVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		9BA815FC1E889E96006BE9F2 /* wjDelegateFirstVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = wjDelegateFirstVC.m; path = delegate/wjDelegateFirstVC.m; sourceTree = "<group>"; };
 		9BA815FE1E889EC5006BE9F2 /* wjDelegateSecondVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wjDelegateSecondVC.h; path = delegate/wjDelegateSecondVC.h; sourceTree = "<group>"; };
 		9BA815FF1E889EC5006BE9F2 /* wjDelegateSecondVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = wjDelegateSecondVC.m; path = delegate/wjDelegateSecondVC.m; sourceTree = "<group>"; };
+		9BA816021E88B6D7006BE9F2 /* wjBlockFirstVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wjBlockFirstVC.h; path = block/wjBlockFirstVC.h; sourceTree = "<group>"; };
+		9BA816031E88B6D7006BE9F2 /* wjBlockFirstVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = wjBlockFirstVC.m; path = block/wjBlockFirstVC.m; sourceTree = "<group>"; };
+		9BA816051E88B6EF006BE9F2 /* wjBlockSecondVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wjBlockSecondVC.h; path = block/wjBlockSecondVC.h; sourceTree = "<group>"; };
+		9BA816061E88B6EF006BE9F2 /* wjBlockSecondVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = wjBlockSecondVC.m; path = block/wjBlockSecondVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,7 @@
 				9BA815E91E889E41006BE9F2 /* ViewController.h */,
 				9BA815EA1E889E41006BE9F2 /* ViewController.m */,
 				9BA815FA1E889E5A006BE9F2 /* 代理传值 */,
+				9BA816011E88B67B006BE9F2 /* block传值 */,
 				9BA815EC1E889E41006BE9F2 /* Main.storyboard */,
 				9BA815EF1E889E41006BE9F2 /* Assets.xcassets */,
 				9BA815F11E889E41006BE9F2 /* LaunchScreen.storyboard */,
@@ -95,6 +102,17 @@
 				9BA815FF1E889EC5006BE9F2 /* wjDelegateSecondVC.m */,
 			);
 			name = "代理传值";
+			sourceTree = "<group>";
+		};
+		9BA816011E88B67B006BE9F2 /* block传值 */ = {
+			isa = PBXGroup;
+			children = (
+				9BA816021E88B6D7006BE9F2 /* wjBlockFirstVC.h */,
+				9BA816031E88B6D7006BE9F2 /* wjBlockFirstVC.m */,
+				9BA816051E88B6EF006BE9F2 /* wjBlockSecondVC.h */,
+				9BA816061E88B6EF006BE9F2 /* wjBlockSecondVC.m */,
+			);
+			name = "block传值";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +188,8 @@
 			files = (
 				9BA815EB1E889E41006BE9F2 /* ViewController.m in Sources */,
 				9BA815E81E889E41006BE9F2 /* AppDelegate.m in Sources */,
+				9BA816071E88B6EF006BE9F2 /* wjBlockSecondVC.m in Sources */,
+				9BA816041E88B6D7006BE9F2 /* wjBlockFirstVC.m in Sources */,
 				9BA816001E889EC5006BE9F2 /* wjDelegateSecondVC.m in Sources */,
 				9BA815E51E889E41006BE9F2 /* main.m in Sources */,
 				9BA815FD1E889E96006BE9F2 /* wjDelegateFirstVC.m in Sources */,
@@ -329,6 +349,7 @@
 				9BA815F91E889E41006BE9F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
