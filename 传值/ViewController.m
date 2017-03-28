@@ -10,6 +10,7 @@
 #import "wjDelegateFirstVC.h"
 #import "wjBlockFirstVC.h"
 #import "wjPropertyFirstVC.h"
+#import "wjSingleTonFirstVC.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -33,7 +34,7 @@
 - (NSArray *)dataArray {
     if (!_dataArray) {
         _dataArray = [NSArray array];
-        _dataArray = @[@"代理传值", @"block传值", @"属性传值"];
+        _dataArray = @[@"代理传值", @"block传值", @"属性传值", @"单例传值"];
     }
     return _dataArray;
 }
@@ -65,9 +66,11 @@
         wjPropertyFirstVC *first = [[wjPropertyFirstVC alloc] init];
         [self.navigationController pushViewController:first animated:YES];
     }
+    if (indexPath.row == 3) {
+        wjSingleTonFirstVC *first = [[wjSingleTonFirstVC alloc] init];
+        [self.navigationController pushViewController:first animated:YES];
+    }
 }
-
-
 
 
 @end

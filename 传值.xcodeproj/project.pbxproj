@@ -19,6 +19,9 @@
 		9BB6B2441E88E3FD004B330D /* wjPropertyFirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6B2431E88E3FD004B330D /* wjPropertyFirstVC.m */; };
 		9BB6B2471E88E41D004B330D /* wjPropertySecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6B2461E88E41D004B330D /* wjPropertySecondVC.m */; };
 		9BB6B2491E88EB1F004B330D /* wjBlockSecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6B2481E88EB1F004B330D /* wjBlockSecondVC.m */; };
+		9BB6B24D1E88EE47004B330D /* wjSingleTonFirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6B24C1E88EE47004B330D /* wjSingleTonFirstVC.m */; };
+		9BB6B2501E88EE60004B330D /* wjSingleTonSecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6B24F1E88EE60004B330D /* wjSingleTonSecondVC.m */; };
+		9BB6B2531E88EE8B004B330D /* wjSingleTon.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6B2521E88EE8B004B330D /* wjSingleTon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,12 @@
 		9BB6B2451E88E41D004B330D /* wjPropertySecondVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wjPropertySecondVC.h; path = "属性传值/wjPropertySecondVC.h"; sourceTree = "<group>"; };
 		9BB6B2461E88E41D004B330D /* wjPropertySecondVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = wjPropertySecondVC.m; path = "属性传值/wjPropertySecondVC.m"; sourceTree = "<group>"; };
 		9BB6B2481E88EB1F004B330D /* wjBlockSecondVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = wjBlockSecondVC.m; path = block/wjBlockSecondVC.m; sourceTree = "<group>"; };
+		9BB6B24B1E88EE47004B330D /* wjSingleTonFirstVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wjSingleTonFirstVC.h; path = "单例传值/wjSingleTonFirstVC.h"; sourceTree = "<group>"; };
+		9BB6B24C1E88EE47004B330D /* wjSingleTonFirstVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = wjSingleTonFirstVC.m; path = "单例传值/wjSingleTonFirstVC.m"; sourceTree = "<group>"; };
+		9BB6B24E1E88EE60004B330D /* wjSingleTonSecondVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wjSingleTonSecondVC.h; path = "单例传值/wjSingleTonSecondVC.h"; sourceTree = "<group>"; };
+		9BB6B24F1E88EE60004B330D /* wjSingleTonSecondVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = wjSingleTonSecondVC.m; path = "单例传值/wjSingleTonSecondVC.m"; sourceTree = "<group>"; };
+		9BB6B2511E88EE8B004B330D /* wjSingleTon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wjSingleTon.h; path = "单例传值/wjSingleTon.h"; sourceTree = "<group>"; };
+		9BB6B2521E88EE8B004B330D /* wjSingleTon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = wjSingleTon.m; path = "单例传值/wjSingleTon.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +89,7 @@
 				9BA815E71E889E41006BE9F2 /* AppDelegate.m */,
 				9BA815E91E889E41006BE9F2 /* ViewController.h */,
 				9BA815EA1E889E41006BE9F2 /* ViewController.m */,
+				9BB6B24A1E88EDF8004B330D /* 单例传值 */,
 				9BB6B2411E88E38A004B330D /* 属性传值 */,
 				9BA815FA1E889E5A006BE9F2 /* 代理传值 */,
 				9BA816011E88B67B006BE9F2 /* block传值 */,
@@ -131,6 +141,19 @@
 				9BB6B2461E88E41D004B330D /* wjPropertySecondVC.m */,
 			);
 			name = "属性传值";
+			sourceTree = "<group>";
+		};
+		9BB6B24A1E88EDF8004B330D /* 单例传值 */ = {
+			isa = PBXGroup;
+			children = (
+				9BB6B24B1E88EE47004B330D /* wjSingleTonFirstVC.h */,
+				9BB6B24C1E88EE47004B330D /* wjSingleTonFirstVC.m */,
+				9BB6B24E1E88EE60004B330D /* wjSingleTonSecondVC.h */,
+				9BB6B24F1E88EE60004B330D /* wjSingleTonSecondVC.m */,
+				9BB6B2511E88EE8B004B330D /* wjSingleTon.h */,
+				9BB6B2521E88EE8B004B330D /* wjSingleTon.m */,
+			);
+			name = "单例传值";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,13 +228,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BA815EB1E889E41006BE9F2 /* ViewController.m in Sources */,
+				9BB6B2501E88EE60004B330D /* wjSingleTonSecondVC.m in Sources */,
 				9BA815E81E889E41006BE9F2 /* AppDelegate.m in Sources */,
 				9BB6B2471E88E41D004B330D /* wjPropertySecondVC.m in Sources */,
+				9BB6B2531E88EE8B004B330D /* wjSingleTon.m in Sources */,
 				9BA816041E88B6D7006BE9F2 /* wjBlockFirstVC.m in Sources */,
 				9BA816001E889EC5006BE9F2 /* wjDelegateSecondVC.m in Sources */,
 				9BB6B2441E88E3FD004B330D /* wjPropertyFirstVC.m in Sources */,
 				9BA815E51E889E41006BE9F2 /* main.m in Sources */,
 				9BB6B2491E88EB1F004B330D /* wjBlockSecondVC.m in Sources */,
+				9BB6B24D1E88EE47004B330D /* wjSingleTonFirstVC.m in Sources */,
 				9BA815FD1E889E96006BE9F2 /* wjDelegateFirstVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

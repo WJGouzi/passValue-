@@ -23,7 +23,7 @@
 
 
 - (void)settings {
-    self.title = @"属性传值VC2";
+    self.title = @"属性VC2";
     self.view.backgroundColor = [UIColor whiteColor];
     
     // UI界面

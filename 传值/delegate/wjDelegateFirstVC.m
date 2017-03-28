@@ -31,7 +31,7 @@
 }
 
 - (void)settings {
-    self.title = @"代理传值VC1";
+    self.title = @"代理VC1";
     self.view.backgroundColor = [UIColor whiteColor];
     
     // UI界面
