@@ -22,6 +22,8 @@
 		9BB6B24D1E88EE47004B330D /* wjSingleTonFirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6B24C1E88EE47004B330D /* wjSingleTonFirstVC.m */; };
 		9BB6B2501E88EE60004B330D /* wjSingleTonSecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6B24F1E88EE60004B330D /* wjSingleTonSecondVC.m */; };
 		9BB6B2531E88EE8B004B330D /* wjSingleTon.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6B2521E88EE8B004B330D /* wjSingleTon.m */; };
+		C4AAA2B61F347C290001E14D /* wjAddObserverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4AAA2B31F347C290001E14D /* wjAddObserverVC.m */; };
+		C4AAA2B71F347C290001E14D /* wjPostNotificaitonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4AAA2B51F347C290001E14D /* wjPostNotificaitonVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,10 @@
 		9BB6B24F1E88EE60004B330D /* wjSingleTonSecondVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = wjSingleTonSecondVC.m; path = "单例传值/wjSingleTonSecondVC.m"; sourceTree = "<group>"; };
 		9BB6B2511E88EE8B004B330D /* wjSingleTon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wjSingleTon.h; path = "单例传值/wjSingleTon.h"; sourceTree = "<group>"; };
 		9BB6B2521E88EE8B004B330D /* wjSingleTon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = wjSingleTon.m; path = "单例传值/wjSingleTon.m"; sourceTree = "<group>"; };
+		C4AAA2B21F347C290001E14D /* wjAddObserverVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wjAddObserverVC.h; sourceTree = "<group>"; };
+		C4AAA2B31F347C290001E14D /* wjAddObserverVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wjAddObserverVC.m; sourceTree = "<group>"; };
+		C4AAA2B41F347C290001E14D /* wjPostNotificaitonVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wjPostNotificaitonVC.h; sourceTree = "<group>"; };
+		C4AAA2B51F347C290001E14D /* wjPostNotificaitonVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wjPostNotificaitonVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,7 @@
 				9BB6B24A1E88EDF8004B330D /* 单例传值 */,
 				9BB6B2411E88E38A004B330D /* 属性传值 */,
 				9BA815FA1E889E5A006BE9F2 /* 代理传值 */,
+				C4AAA2B11F347C290001E14D /* 通知传值 */,
 				9BA816011E88B67B006BE9F2 /* block传值 */,
 				9BA815EC1E889E41006BE9F2 /* Main.storyboard */,
 				9BA815EF1E889E41006BE9F2 /* Assets.xcassets */,
@@ -154,6 +161,17 @@
 				9BB6B2521E88EE8B004B330D /* wjSingleTon.m */,
 			);
 			name = "单例传值";
+			sourceTree = "<group>";
+		};
+		C4AAA2B11F347C290001E14D /* 通知传值 */ = {
+			isa = PBXGroup;
+			children = (
+				C4AAA2B21F347C290001E14D /* wjAddObserverVC.h */,
+				C4AAA2B31F347C290001E14D /* wjAddObserverVC.m */,
+				C4AAA2B41F347C290001E14D /* wjPostNotificaitonVC.h */,
+				C4AAA2B51F347C290001E14D /* wjPostNotificaitonVC.m */,
+			);
+			path = "通知传值";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4AAA2B71F347C290001E14D /* wjPostNotificaitonVC.m in Sources */,
 				9BA815EB1E889E41006BE9F2 /* ViewController.m in Sources */,
 				9BB6B2501E88EE60004B330D /* wjSingleTonSecondVC.m in Sources */,
 				9BA815E81E889E41006BE9F2 /* AppDelegate.m in Sources */,
@@ -239,6 +258,7 @@
 				9BB6B2491E88EB1F004B330D /* wjBlockSecondVC.m in Sources */,
 				9BB6B24D1E88EE47004B330D /* wjSingleTonFirstVC.m in Sources */,
 				9BA815FD1E889E96006BE9F2 /* wjDelegateFirstVC.m in Sources */,
+				C4AAA2B61F347C290001E14D /* wjAddObserverVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

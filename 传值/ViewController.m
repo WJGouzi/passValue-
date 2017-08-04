@@ -11,6 +11,7 @@
 #import "wjBlockFirstVC.h"
 #import "wjPropertyFirstVC.h"
 #import "wjSingleTonFirstVC.h"
+#import "wjPostNotificaitonVC.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -68,6 +69,11 @@
     }
     if (indexPath.row == 3) {
         wjSingleTonFirstVC *first = [[wjSingleTonFirstVC alloc] init];
+        [self.navigationController pushViewController:first animated:YES];
+    }
+    
+    if (indexPath.row == 4) {
+        wjPostNotificaitonVC *first = [[wjPostNotificaitonVC alloc] init];
         [self.navigationController pushViewController:first animated:YES];
     }
 }
