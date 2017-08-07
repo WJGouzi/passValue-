@@ -23,7 +23,7 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
     [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"test" object:self userInfo:@{@"text" : @"wangjun"}];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"test" object:self userInfo:@{@"text" : @"请输入账号名"}];
     }];
     
 
